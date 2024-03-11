@@ -1,0 +1,227 @@
+body {
+    /* font-family: nunito, sans-serif; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body ul{
+    margin: 0;
+    padding: 0;
+}
+header{
+   /* background-color: rgb(29, 165, 29); */
+   padding: 1px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: nunito, sans-serif;
+   font-size: 1.5em;
+}
+nav ul li {
+    display: inline;
+   padding-right: 60px;
+   
+  }
+  nav ul li a{
+    text-decoration: none;
+  }
+
+a:active, a:hover{
+background-color: #cfd1d0;
+
+}
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.logo a {
+    display: inline-block; /* Ensure link takes up only necessary space */
+}
+
+.logo h1 {
+    margin-left: 10px; /* Adjust as needed */
+}
+
+img{
+
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  
+}
+.container, h1{
+    text-align: center;
+    font-size: 1.5em;
+    /* background-color: aquamarine; */
+    margin-top: 0px;
+    font-weight: normal;
+    /* font-style: italic; */
+
+}
+/* .container{
+    background-color: #cfd1d0;
+} */
+.container, p{
+    font-size: 40px;
+    text-align: justify;
+    /* color: whitesmoke; */
+   font-weight: bold;
+ 
+}
+.first{
+    color: black;
+    background-color:#0dbf16;
+}
+#check{
+background-color: rgb(126, 202, 173);
+text-decoration: none;
+color: whitesmoke;
+text-decoration: none;
+
+
+
+}
+
+.footer{
+    margin-top: 50px;
+}
+.footer, p{
+    text-align: center;
+
+}
+/* .container{
+    background-image:url(https://st4.depositphotos.com/12245178/24591/i/450/depositphotos_245911992-stock-photo-agriculture-drone-fly-sprayed-fertilizer.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+   position: relative;
+} */
+
+main {
+    display: grid;
+    grid-template-rows: 1fr auto; /* 1/8th for heading, remaining for section */
+    height: 100%;
+  }
+  
+  h1 {
+    grid-row: 1; /* Occupy 1/8th of the page */
+  }
+  
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split into two columns */
+    grid-gap: 20px; /* Adjust as needed */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text h1 {
+    font-family: "Times New Roman", Times, serif;
+    
+  }
+  .text p{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 24px;  
+}
+.image-text-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-text-container .image {
+    flex: 1;
+  }
+  
+  .image-text-container .text {
+    flex: 1;
+  }
+  
+  
+  .column-container {
+  margin-left: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically fit columns */
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfd;
+  
+   }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    margin-bottom: 5px;
+  }
+  
+  .message {
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    /* font-size: 10px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+  }
+  .message p{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .column .image {
+    margin-bottom: 5px; /* Adjust margin between image and text */
+  }
+  .customer-comments {
+    margin-top: 20px; /* Add margin to separate from previous content */
+  }
+  
+  .customer-comments h1 {
+    text-align: center; /* Center the heading */
+  }
+
+  .customer-comments {
+    margin-top: 20px; /* Add margin to separate from previous content */
+  }
+  
+  .customer-comments h1 {
+    text-align: center; /* Center the heading */
+  }
+  .customer-comments p{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 20px;
+  }
+  
+  .comment {
+    font-family: Arial, Helvetica, sans-serif; /* Default sans-serif font family */
+    font-size: 16px; /* Default font size */
+    width: calc(50% - 10px); /* Set width for two columns with spacing */
+    margin-bottom: 20px; /* Add margin between comments */
+  }
+  
+  .comment.left {
+    text-align: left; /* Align left-sided comments to the left */
+  }
+
+  
+  .comment.right {
+    text-align: right; /* Align right-sided comments to the right */
+  }
+  
+  .comment:nth-child(3) {
+    margin-left: auto; /* Push second comment to the right side */
+  }
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
